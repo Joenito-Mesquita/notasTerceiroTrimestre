@@ -1,0 +1,133 @@
+/* Reset.css - CSS Reset Completo */
+
+/* Zerar margens, paddings e bordas */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* Remover listas com estilo padrão */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remover aspas padrão de blockquotes e q */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+}
+
+/* Zerar as propriedades de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remover o estilo padrão de botões e campos de formulário */
+button,
+input,
+select,
+textarea {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  appearance: none;
+  outline: none;
+}
+
+/* Definir imagens e mídias responsivas */
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Remover estilos padrões de tabelas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0;
+}
+
+/* Definir largura total para campos de formulário */
+input,
+textarea,
+select {
+  width: 100%;
+}
+
+/* Reset básico de tipografia */
+html {
+  font-size: 100%;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%; /* Ajuste para evitar zoom no iOS */
+  -ms-text-size-adjust: 100%; /* Ajuste para evitar zoom no IE */
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+
+/* Remover o comportamento de toque no iOS para botões */
+button,
+input {
+  touch-action: manipulation;
+}
+
+/* Resetar estilos de títulos e parágrafos */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+}
+
+p {
+  line-height: inherit;
+}
+
+/* Reset para figuras e seus captions */
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+/* Reset de elementos embutidos */
+iframe,
+embed,
+object {
+  border: 0;
+}

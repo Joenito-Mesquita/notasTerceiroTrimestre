@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Notas Primeiro de Maio</title>
+</head>
+
+<body>
+  <header>
+    <h1>Quanto preciso no terceiro?</h1>
+    <p class="text">Agora vamos descobrir quanto você precisa tirar no terceiro trimetre para passar:</p>
+
+    <form>
+      <label>Nota do primeiro trimetre:</label>
+      <input type="number" id="nota1" placeholder="Digite aqui..." max="10" min="0" required />
+
+      <label>Nota do segundo trimetre:</label>
+      <input type="number" id="nota2" placeholder="Digite aqui..." max="10" min="0" required />
+    </form>
+    <button onclick="notas()">Quanto precisa?</button>
+
+    <p id="resultado"><strong>Aqui aparecerá quanto você precisa!</strong></p>
+  </header>
+  <script src="script.js"></script>
+</body>
+
+</html>
